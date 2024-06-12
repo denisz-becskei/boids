@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bcc38a157609f09a98800355771da61, type: 3}
+  m_Name: FlockComposite
+  m_EditorClassIdentifier: 
+  behaviors:
+  - {fileID: 11400000, guid: c8d1122593fd265a683bd87eb9af98de, type: 2}
+  - {fileID: 11400000, guid: 1407ec2015bbf47b5b0e583274b2fa85, type: 2}
+  - {fileID: 11400000, guid: 32b6bea0f9ab7f302b08c40b05dd6d71, type: 2}
+  - {fileID: 11400000, guid: 130413d7f70c1f4beb2bb4f85e244203, type: 2}
+  weights:
+  - 4
+  - 1
+  - 1
+  - 0.1
