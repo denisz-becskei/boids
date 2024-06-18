@@ -6,8 +6,9 @@ public class Flock : MonoBehaviour
     public FlockAgent agentPrefab;
     private List<FlockAgent> _agents = new List<FlockAgent>();
     public FlockBehavior behavior;
-    
-    [Header("Entity Spawning Variables")]
+
+    [Header("Entity Spawning Variables")] 
+    public Color agentColor;
     [Range(10, 500)] 
     public int startingCount = 250;
     private const float AgentDensity = 0.08f;
@@ -48,6 +49,7 @@ public class Flock : MonoBehaviour
                 transform
             );
             newAgent.name = "Agent #" + i;
+            newAgent.agentColor = agentColor;
             newAgent.Initialize(this);
             _agents.Add(newAgent);
         }
